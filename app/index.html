@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nusantara Data — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's national statistics: population, economy, employment, education, health and provinces, each figure labelled with its source and year.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <h1 class="brand"><span class="mark" aria-hidden="true">◈</span>Nusantara Data
+      <small>Indonesia in numbers — an independent statistics notebook</small>
+    </h1>
+    <div class="toolbar">
+      <label for="year-select">Year
+        <select id="year-select">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024" selected>2024</option>
+        </select>
+      </label>
+      <label for="indicator-search">Find an indicator
+        <input id="indicator-search" type="search" placeholder="Try “poverty” or “exports”">
+      </label>
+    </div>
+  </div>
+  <nav id="nav" aria-label="Sections">
+    <a href="#/overview" data-route="overview">Overview</a>
+    <a href="#/population" data-route="population">Population</a>
+    <a href="#/economy" data-route="economy">Economy</a>
+    <a href="#/employment" data-route="employment">Employment</a>
+    <a href="#/education" data-route="education">Education</a>
+    <a href="#/health" data-route="health">Health</a>
+    <a href="#/regions" data-route="regions">Regions</a>
+  </nav>
+</header>
+
+<main id="main">
+  <p>Loading Indonesia’s statistics…</p>
+</main>
+
+<footer>
+  <p><strong>Nusantara Data</strong> — an independent, original statistics notebook about Indonesia.</p>
+  <p>Figures are compiled from public releases of BPS — Statistics Indonesia, the World Bank and the Ministry of Health. Each figure on this site names its own source and year.</p>
+  <p>This site works fully offline: no network requests, no tracking, no cookies.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
